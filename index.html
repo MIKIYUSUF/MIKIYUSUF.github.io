@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,8 +39,7 @@
       const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-      document.getElementById("countdown").textContent =document.getElementById("countdown").textContent = hours + "h " + minutes + "m " + seconds + "s";
-
+      document.getElementById("countdown").textContent = hours + "h " + minutes + "m " + seconds + "s";
     }
 
     // Fungsi untuk menampilkan pesan saat klik tombol Buy Promote
@@ -53,6 +51,16 @@
     // Fungsi untuk menampilkan pesan saat klik tombol Discord
     function showDiscordMessage() {
       alert("GADA DISCORD MAS 🗿");
+    }
+
+    // Fungsi untuk menukar kode
+    function tukarKode() {
+      const userCode = prompt("Masukkan kode:");
+      if (userCode === "779") {
+        window.location.href = "https://wa.me/62895403870766?text=Mas%20ini%20codenya%20779";
+      } else {
+        alert("Kode salah , coba cari lagi!");
+      }
     }
 
     // Jalankan fungsi secara real-time
@@ -67,7 +75,12 @@
     <img alt="Profile picture of @ambagtps" class="rounded-full border-4 border-white shadow-lg mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/k34wLHYAobqpOlZnBm5K0XZZdY4AFMQ0oU3Erfc3Hxw2E67JA.jpg" width="100"/>
     <h1 class="text-2xl font-bold">MancaGtps</h1>
     <p class="text-sm text-gray-400">OPEN PROMOTE GTPS</p>
+    <!-- Tombol Tukar Kode -->
+    <div class="mt-4">
+      <button onclick="tukarKode()" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-400 transition">Tukar Kode</button>
+    </div>
   </div>
+
   <div class="mt-6 w-full max-w-md">
     <!-- WhatsApp Community -->
     <a href="https://chat.whatsapp.com/LNzAmZMUbDmLIZ6sZ7Wp9h" target="_blank" rel="noopener noreferrer">
@@ -89,9 +102,7 @@
       </div>
     </a>
     <!-- VIRTUAL HOST Button -->
-
-
-<a href="https://m.apkshub.com/app/com.github.xfalcon.vhosts" target="_blank" rel="noopener noreferrer">
+    <a href="https://m.apkshub.com/app/com.github.xfalcon.vhosts" target="_blank" rel="noopener noreferrer">
       <div class="bg-gray-800 rounded-lg p-4 mb-4 flex items-center hover:bg-gray-700 transition cursor-pointer">
         <i class="fas fa-server text-green-500 text-2xl mr-4"></i>
         <span>VIRTUAL HOST</span>
