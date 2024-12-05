@@ -55,11 +55,16 @@
 
     // Fungsi untuk menukar kode
     function tukarKode() {
-      const userCode = prompt("Masukkan kode:");
+      // Meminta kode dari pengguna
+      const userCode = prompt("Masukkan kode untuk tukar:");
+
+      // Cek apakah kode yang dimasukkan benar
       if (userCode === "779") {
+        // Jika kode benar, arahkan ke WhatsApp dengan pesan kode
         window.location.href = "https://wa.me/62895403870766?text=Mas%20ini%20codenya%20779";
       } else {
-        alert("Kode salah , coba cari lagi!");
+        // Jika kode salah, tampilkan pesan kesalahan
+        alert("Kode salah, coba cari lagi!");
       }
     }
 
