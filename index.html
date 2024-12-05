@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +40,8 @@
       const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-      document.getElementById("countdown").textContent = `${hours}h ${minutes}m ${seconds}s`;
+      document.getElementById("countdown").textContent =document.getElementById("countdown").textContent = hours + "h " + minutes + "m " + seconds + "s";
+
     }
 
     // Fungsi untuk menampilkan pesan saat klik tombol Buy Promote
@@ -87,7 +89,9 @@
       </div>
     </a>
     <!-- VIRTUAL HOST Button -->
-    <a href="https://m.apkshub.com/app/com.github.xfalcon.vhosts" target="_blank" rel="noopener noreferrer">
+
+
+<a href="https://m.apkshub.com/app/com.github.xfalcon.vhosts" target="_blank" rel="noopener noreferrer">
       <div class="bg-gray-800 rounded-lg p-4 mb-4 flex items-center hover:bg-gray-700 transition cursor-pointer">
         <i class="fas fa-server text-green-500 text-2xl mr-4"></i>
         <span>VIRTUAL HOST</span>
