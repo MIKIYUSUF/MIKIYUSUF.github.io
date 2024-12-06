@@ -70,17 +70,19 @@
 
     // Set dynamic server name (you can change this value)
     let serverName = "VOLIX PS"; // You can change this value
+    let serverThumbnail = "https://via.placeholder.com/150"; // You can set the thumbnail here
 
-    // Function to update the server name in the page
-    function updateServerName() {
+    // Function to update the server name and thumbnail in the page
+    function updateServerInfo() {
       document.getElementById("server-name").textContent = serverName;
+      document.getElementById("server-thumbnail").src = serverThumbnail; // Update the thumbnail
     }
 
     // Jalankan fungsi secara real-time
     setInterval(() => {
       updateTime();
       updateCountdown();
-      updateServerName(); // Update server name in real-time
+      updateServerInfo(); // Update server name and thumbnail in real-time
     }, 1000);
   </script>
 </head>
@@ -166,7 +168,11 @@
     <div class="bg-gray-900 rounded-lg p-4 mt-4 text-center text-sm">
       <p>LATEST VIDEO APPEARS IN</p>
       <p id="countdown"></p>
-      <p id="server-name" class="text-gray-400 mt-2">VOLIX PS</p> <!-- Dynamic server name -->
+    </div>
+    <!-- Server Name and Thumbnail Section -->
+    <div class="bg-gray-900 rounded-lg p-4 mt-6 text-center">
+      <p id="server-name" class="text-gray-400">VOLIX PS</p>
+      <img id="" class="rounded-lg mt-4" src="https://i.ibb.co.com/qDxPBMk/20241206-102739.png" alt="Server Thumbnail" width="450"/>
     </div>
   </div>
 </body>
