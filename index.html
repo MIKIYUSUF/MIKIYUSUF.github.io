@@ -68,10 +68,19 @@
       }
     }
 
+    // Set dynamic server name (you can change this value)
+    let serverName = "VOLIX PS"; // You can change this value
+
+    // Function to update the server name in the page
+    function updateServerName() {
+      document.getElementById("server-name").textContent = serverName;
+    }
+
     // Jalankan fungsi secara real-time
     setInterval(() => {
       updateTime();
       updateCountdown();
+      updateServerName(); // Update server name in real-time
     }, 1000);
   </script>
 </head>
@@ -157,6 +166,7 @@
     <div class="bg-gray-900 rounded-lg p-4 mt-4 text-center text-sm">
       <p>LATEST VIDEO APPEARS IN</p>
       <p id="countdown"></p>
+      <p id="server-name" class="text-gray-400 mt-2">VOLIX PS</p> <!-- Dynamic server name -->
     </div>
   </div>
 </body>
